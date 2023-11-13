@@ -85,7 +85,7 @@
         }
 
         .project h3 {
-            color: #007bff;
+/*             color: #007bff; */
         }
 
         .project p {
@@ -165,11 +165,17 @@
         </ul>
     </section>
     <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Ensure that the content is initially visible
+        var content = document.querySelector('.read-more-content');
+        content.style.display = 'block';
+
+        // Toggle function
         function toggleReadMore() {
             var content = document.querySelector('.read-more-content');
             var toggle = document.querySelector('.read-more-toggle');
 
-            if (content.style.display === 'none') {
+            if (content.style.display === 'none' || content.style.display === '') {
                 content.style.display = 'block';
                 toggle.textContent = 'See Less...';
             } else {
@@ -177,7 +183,13 @@
                 toggle.textContent = 'See More...';
             }
         }
-    </script>
+
+        // Attach the toggleReadMore function to the click event
+        var toggleButton = document.querySelector('.read-more-toggle');
+        toggleButton.addEventListener('click', toggleReadMore);
+    });
+</script>
+
 </body>
 
 </html>
