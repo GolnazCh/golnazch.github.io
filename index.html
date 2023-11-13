@@ -91,6 +91,16 @@ header div h1 {
         .project p {
             color: #555;
         }
+
+        .read-more-content {
+            display: none;
+        }
+
+        .read-more-toggle {
+            color: #007bff;
+            cursor: pointer;
+        }
+        
     </style>
 </head>
 
@@ -106,20 +116,14 @@ header div h1 {
     <section>
 
         <h2>ABOUT ME</h2>
-        <p>I am a results-driven and adaptable Mobile Developer with a proven track record in crafting innovative solutions for diverse mobile platforms. My journey in Mobile Application Development has equipped me with a solid foundation, and I am fueled by a relentless passion for staying at the forefront of cutting-edge technologies.
-        </p><p>
-In my career, I have successfully navigated the dynamic landscape of mobile development, bringing creativity and technical expertise to each project. My proficiency spans across various mobile platforms, including iOS and Android, and I am well-versed in utilizing frameworks such as React Native to deliver cross-platform experiences.
- </p><p>
-My commitment to excellence extends beyond coding. I am deeply engaged in the entire software development life cycle, from conceptualization and design to implementation, testing, and deployment. As a proactive learner, I embrace challenges as opportunities for growth, consistently expanding my skill set to align with the ever-evolving demands of the industry.
- </p><p>
-With a keen eye for detail and a focus on user-centric design, I have contributed to the development of feature-rich mobile applications. I excel in collaborating with cross-functional teams, fostering an environment of innovation, and ensuring that projects are not only technically robust but also deliver seamless user experiences.
- </p><p>
-In addition to my technical prowess, I bring a strong analytical mindset and effective problem-solving skills. I am well-versed in Agile methodologies, utilizing tools like Jira to streamline project management and foster collaboration among team members. My dedication to quality and efficiency has resulted in the successful delivery of impactful mobile solutions.
- </p><p>
-Beyond the realm of coding, I am a proactive communicator, able to translate technical complexities into clear, understandable terms for diverse audiences. My commitment to staying informed about emerging technologies positions me as a forward-thinking professional ready to tackle the challenges of tomorrow.
- </p><p>
-I am excited about the endless possibilities that technology offers and am eager to contribute my skills to create innovative mobile experiences that make a positive impact on users' lives.
-</p>
+        <div class="read-more-content">
+            <p>
+                I am a results-driven and adaptable Mobile Developer with a proven track record in crafting innovative solutions for diverse mobile platforms. My journey in Mobile Application Development has equipped me with a solid foundation, and I am fueled by a relentless passion for staying at the forefront of cutting-edge technologies.
+            </p>
+            <!-- Add the rest of your "About Me" content here -->
+        </div>
+        <p class="read-more-toggle" onclick="toggleReadMore()">See More...</p>
+
 
         <h2>TECHNICAL SKILLS</h2>
         <ul>
@@ -159,7 +163,20 @@ I am excited about the endless possibilities that technology offers and am eager
         </ul>
 
     </section>
+ <script>
+        function toggleReadMore() {
+            var content = document.querySelector('.read-more-content');
+            var toggle = document.querySelector('.read-more-toggle');
 
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                toggle.textContent = 'See Less...';
+            } else {
+                content.style.display = 'none';
+                toggle.textContent = 'See More...';
+            }
+        }
+    </script>
 </body>
 
 </html>
