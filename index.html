@@ -16,32 +16,30 @@
         }
 
         header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-   /* margin: 20px auto;  Set the same margin and auto for centering */
-/*     max-width: 800px;  */
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            align-items: center;
             justify-content: center;
         }
 
-header img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px; /* Added margin to separate image from text */
-}
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
 
-header div {
-    margin: 5px;
-    align-items: center;
-    text-align: center;
-}
+        header div {
+            margin: 5px;
+            align-items: center;
+            text-align: center;
+        }
 
-header div h1 {
-    color: #fff;
-}
+        header div h1 {
+            color: #fff;
+        }
 
         section {
             max-width: 800px;
@@ -52,12 +50,8 @@ header div h1 {
             border-radius: 8px;
         }
 
-        h1 {
+        h1, h2 {
             color: #007bff;
-        }
-
-        h2 {
-            color: #333;
         }
 
         ul {
@@ -67,7 +61,7 @@ header div h1 {
 
         li {
             margin-bottom: 10px;
-             margin-left: 5px;
+            margin-left: 5px;
         }
 
         li p {
@@ -94,59 +88,47 @@ header div h1 {
 
         .read-more-content {
             display: none;
+            margin-top: 10px;
         }
 
         .read-more-toggle {
             color: #007bff;
             cursor: pointer;
+            margin-top: 10px;
+            display: block;
         }
-        
     </style>
 </head>
 
 <body>
-<header>
-        <!-- Your image goes here -->
+    <header>
         <img src="golnaz.jpg" alt="Golnaz Chehrazi - Mobile Application Developer" style="width: 100px; height: 100px; border-radius: 50%;">
         <div>
             <h1>Golnaz Chehrazi</h1>
             <p>Mobile Application Developer</p>
         </div>
-</header>
+    </header>
     <section>
-
         <h2>ABOUT ME</h2>
-        <p>I am a results-driven and adaptable Mobile Developer with a proven track record in crafting innovative solutions for diverse mobile platforms. My journey in Mobile Application Development has equipped me with a solid foundation, and I am fueled by a relentless passion for staying at the forefront of cutting-edge technologies.
-        </p>
+        <p>I am a results-driven and adaptable Mobile Developer with a proven track record in crafting innovative solutions for diverse mobile platforms. My journey in Mobile Application Development has equipped me with a solid foundation, and I am fueled by a relentless passion for staying at the forefront of cutting-edge technologies.</p>
         <div class="read-more-content">
-   <p>
-In my career, I have successfully navigated the dynamic landscape of mobile development, bringing creativity and technical expertise to each project. My proficiency spans across various mobile platforms, including iOS and Android, and I am well-versed in utilizing frameworks such as React Native to deliver cross-platform experiences.
- </p>  <p>
-My commitment to excellence extends beyond coding. I am deeply engaged in the entire software development life cycle, from conceptualization and design to implementation, testing, and deployment. As a proactive learner, I embrace challenges as opportunities for growth, consistently expanding my skill set to align with the ever-evolving demands of the industry.
- </p>
-            <p>
-                With a keen eye for detail and a focus on user-centric design, I have contributed to the development of feature-rich mobile applications. I excel in collaborating with cross-functional teams, fostering an environment of innovation, and ensuring that projects are not only technically robust but also deliver seamless user experiences.
- </p><p>
-In addition to my technical prowess, I bring a strong analytical mindset and effective problem-solving skills. I am well-versed in Agile methodologies, utilizing tools like Jira to streamline project management and foster collaboration among team members. My dedication to quality and efficiency has resulted in the successful delivery of impactful mobile solutions.
- </p><p>
-Beyond the realm of coding, I am a proactive communicator, able to translate technical complexities into clear, understandable terms for diverse audiences. My commitment to staying informed about emerging technologies positions me as a forward-thinking professional ready to tackle the challenges of tomorrow.
- </p><p>
-I am excited about the endless possibilities that technology offers and am eager to contribute my skills to create innovative mobile experiences that make a positive impact on users' lives.
- </p>
-            <!-- Add the rest of your "About Me" content here -->
+            <p>In my career, I have successfully navigated the dynamic landscape of mobile development, bringing creativity and technical expertise to each project. My proficiency spans across various mobile platforms, including iOS and Android, and I am well-versed in utilizing frameworks such as React Native to deliver cross-platform experiences.</p>
+            <p>My commitment to excellence extends beyond coding. I am deeply engaged in the entire software development life cycle, from conceptualization and design to implementation, testing, and deployment. As a proactive learner, I embrace challenges as opportunities for growth, consistently expanding my skill set to align with the ever-evolving demands of the industry.</p>
+            <p>With a keen eye for detail and a focus on user-centric design, I have contributed to the development of feature-rich mobile applications. I excel in collaborating with cross-functional teams, fostering an environment of innovation, and ensuring that projects are not only technically robust but also deliver seamless user experiences.</p>
+            <p>In addition to my technical prowess, I bring a strong analytical mindset and effective problem-solving skills. I am well-versed in Agile methodologies, utilizing tools like Jira to streamline project management and foster collaboration among team members. My dedication to quality and efficiency has resulted in the successful delivery of impactful mobile solutions.</p>
+            <p>Beyond the realm of coding, I am a proactive communicator, able to translate technical complexities into clear, understandable terms for diverse audiences. My commitment to staying informed about emerging technologies positions me as a forward-thinking professional ready to tackle the challenges of tomorrow.</p>
+            <p>I am excited about the endless possibilities that technology offers and am eager to contribute my skills to create innovative mobile experiences that make a positive impact on users' lives.</p>
         </div>
         <p class="read-more-toggle" onclick="toggleReadMore()">See More...</p>
-
-
-        </section>
+    </section>
     <section>
         <h2>TECHNICAL SKILLS</h2>
         <ul>
-             <li><p>Project Management Tools: </p>Jira Software</li>
+            <li><p>Project Management Tools: </p>Jira Software</li>
             <li><p>Agile Methodologies: </p>Scrum</li>
             <li><p>Programming Languages: </p>Swift, Kotlin, C#</li>
             <li><p>Web and Frameworks: </p>ASP.NET, HTML, CSS, JavaScript</li>
-           <li><p>Development Tools: </p>Android Studio, Xcode, IntelliJ IDEA, Visual Studio Code, Visual Studio .NET</li>
+            <li><p>Development Tools: </p>Android Studio, Xcode, IntelliJ IDEA, Visual Studio Code, Visual Studio .NET</li>
             <li><p>Mobile Technologies: </p>Android, iOS, React Native</li>
             <li><p>Operating Systems: </p>Windows, Mac</li>
             <li><p>Database: </p>Microsoft SQL Server, MongoDB, Cloud Firestore</li>
@@ -154,34 +136,29 @@ I am excited about the endless possibilities that technology offers and am eager
         </ul>
     </section>
     <section>
-
-        <h2>PPROJECTS</h2>
-
+        <h2>PROJECTS</h2>
         <div class="project">
             <h3>iOS App - Discover nearby events</h3>
             <p>Developed feature-rich iOS app using advanced Swift techniques and integrated APIs. Collaborated in groups for dynamic development and enabled sharing functionality.</p>
         </div>
-
         <div class="project">
             <h3>Android App - National Park Tourism Application</h3>
             <p>Collaborated on designing, building, and testing a feature-rich mobile app. Integrated itinerary creation functionality for personalized park visit plans.</p>
         </div>
-
         <div class="project">
             <h3>Electric Car Rental App using React Native</h3>
             <p>Designed and developed a React Native mobile application for electric car owners and renters. Showcased cross-app interactions, emphasizing React Native and Firebase skills.</p>
         </div>
     </section>
-<section>
+    <section>
         <h2>CONTACT</h2>
         <ul>
             <li>Email: <a href="mailto:golnaz.chehrazi@gmail.com">golnaz.chehrazi@gmail.com</a></li>
             <li>LinkedIn: <a href="https://linkedin.com/in/golnaz-chehrazi-87841422b">linkedin.com/in/golnaz-chehrazi-87841422b</a></li>
             <li>Github: <a href="https://github.com/GolnazCh">github.com/GolnazCh</a></li>
         </ul>
-
     </section>
- <script>
+    <script>
         function toggleReadMore() {
             var content = document.querySelector('.read-more-content');
             var toggle = document.querySelector('.read-more-toggle');
@@ -195,7 +172,6 @@ I am excited about the endless possibilities that technology offers and am eager
             }
         }
     </script>
-
 </body>
 
 </html>
