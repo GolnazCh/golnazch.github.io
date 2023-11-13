@@ -190,19 +190,21 @@ I am excited about the endless possibilities that technology offers and am eager
 
     </section>
 <script>
-    function toggleReadMore(sectionId) {
-        var content = document.querySelector(`.${sectionId} .read-more-content`);
-        var toggle = document.querySelector(`.${sectionId} .read-more-toggle`);
-
-        content.classList.toggle('read-more-hidden');
+<script>
+    function toggleReadMore(className) {
+        var content = document.querySelector(`.${className} .read-more-content`);
+        var toggle = document.querySelector(`.${className} .read-more-toggle`);
 
         if (content.classList.contains('read-more-hidden')) {
-            toggle.textContent = 'See More...';
-        } else {
+            content.classList.remove('read-more-hidden');
             toggle.textContent = 'See Less...';
+        } else {
+            content.classList.add('read-more-hidden');
+            toggle.textContent = 'See More...';
         }
     }
 </script>
+
 </body>
 
 </html>
