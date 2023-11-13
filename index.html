@@ -135,7 +135,7 @@ I am excited about the endless possibilities that technology offers and am eager
  </p>
             <!-- Add the rest of your "About Me" content here -->
         </div>
-        <p class="read-more-toggle" onclick="toggleReadMore()">See More...</p>
+        <p class="read-more-toggle" onclick="toggleReadMore('aboutMe')">See More...</p>
 
 
         </section>
@@ -186,9 +186,9 @@ I am excited about the endless possibilities that technology offers and am eager
 
     </section>
  <script>
-        function toggleReadMore() {
-            var content = document.querySelector('.read-more-content');
-            var toggle = document.querySelector('.read-more-toggle');
+        function toggleReadMore(sectionId) {
+            var content = document.querySelector(`.${sectionId} .read-more-content`);
+            var toggle = document.querySelector(`.${sectionId} .read-more-toggle`);
 
             if (content.style.display === 'none') {
                 content.style.display = 'block';
