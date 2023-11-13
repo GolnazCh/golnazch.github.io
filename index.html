@@ -96,10 +96,6 @@ header div h1 {
             display: none;
         }
 
-        .read-more-hidden {
-    display: none;
-}
-
         .read-more-toggle {
             color: #007bff;
             cursor: pointer;
@@ -139,7 +135,7 @@ I am excited about the endless possibilities that technology offers and am eager
  </p>
             <!-- Add the rest of your "About Me" content here -->
         </div>
-        <p class="read-more-toggle" onclick="toggleReadMore('aboutMe')">See More...</p>
+        <p class="read-more-toggle" onclick="toggleReadMore()">See More...</p>
 
 
         </section>
@@ -150,16 +146,12 @@ I am excited about the endless possibilities that technology offers and am eager
             <li><p>Agile Methodologies: </p>Scrum</li>
             <li><p>Programming Languages: </p>Swift, Kotlin, C#</li>
             <li><p>Web and Frameworks: </p>ASP.NET, HTML, CSS, JavaScript</li>
-            
-        </ul>
-        <ul class="read-more-content">
            <li><p>Development Tools: </p>Android Studio, Xcode, IntelliJ IDEA, Visual Studio Code, Visual Studio .NET</li>
             <li><p>Mobile Technologies: </p>Android, iOS, React Native</li>
             <li><p>Operating Systems: </p>Windows, Mac</li>
             <li><p>Database: </p>Microsoft SQL Server, MongoDB, Cloud Firestore</li>
             <li><p>Version Control: </p>Git</li>
         </ul>
-        <p class="read-more-toggle" onclick="toggleReadMore('skills')">See More...</p>
     </section>
     <section>
 
@@ -189,20 +181,20 @@ I am excited about the endless possibilities that technology offers and am eager
         </ul>
 
     </section>
-<script>
-    function toggleReadMore(className) {
-        var content = document.querySelector(`.${className} .read-more-content`);
-        var toggle = document.querySelector(`.${className} .read-more-toggle`);
+ <script>
+        function toggleReadMore() {
+            var content = document.querySelector('.read-more-content');
+            var toggle = document.querySelector('.read-more-toggle');
 
-        if (content.classList.contains('read-more-hidden')) {
-            content.classList.remove('read-more-hidden');
-            toggle.textContent = 'See Less...';
-        } else {
-            content.classList.add('read-more-hidden');
-            toggle.textContent = 'See More...';
+            if (content.style.display === 'none') {
+                content.style.display = 'block';
+                toggle.textContent = 'See Less...';
+            } else {
+                content.style.display = 'none';
+                toggle.textContent = 'See More...';
+            }
         }
-    }
-</script>
+    </script>
 
 </body>
 
