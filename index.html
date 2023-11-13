@@ -39,6 +39,7 @@
         header div h1 {
             color: #fff;
             margin-bottom: 5px;
+            font-size: 1.5em; /* Adjust font size */
         }
 
         header div p {
@@ -85,7 +86,7 @@
         }
 
         .project h3 {
-/*             color: #007bff; */
+            color: #007bff; /* Adjusted color */
         }
 
         .project p {
@@ -165,14 +166,7 @@
         </ul>
     </section>
 
-    
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Ensure that the content is initially visible
-        var content = document.querySelector('.read-more-content');
-        content.style.display = 'hidden';
-
-        // Toggle function
         function toggleReadMore() {
             var content = document.querySelector('.read-more-content');
             var toggle = document.querySelector('.read-more-toggle');
@@ -185,12 +179,7 @@
                 toggle.textContent = 'See More...';
             }
         }
-
-        // Attach the toggleReadMore function to the click event
-        var toggleButton = document.querySelector('.read-more-toggle');
-        toggleButton.addEventListener('click', toggleReadMore);
-    });
-</script>
+    </script>
 
 </body>
 
