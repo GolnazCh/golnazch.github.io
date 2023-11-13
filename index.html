@@ -96,6 +96,10 @@ header div h1 {
             display: none;
         }
 
+        .read-more-hidden {
+    display: none;
+}
+
         .read-more-toggle {
             color: #007bff;
             cursor: pointer;
@@ -185,20 +189,20 @@ I am excited about the endless possibilities that technology offers and am eager
         </ul>
 
     </section>
- <script>
-        function toggleReadMore(sectionId) {
-            var content = document.querySelector(`.${sectionId} .read-more-content`);
-            var toggle = document.querySelector(`.${sectionId} .read-more-toggle`);
+<script>
+    function toggleReadMore(sectionId) {
+        var content = document.querySelector(`.${sectionId} .read-more-content`);
+        var toggle = document.querySelector(`.${sectionId} .read-more-toggle`);
 
-            if (content.style.display === 'none') {
-                content.style.display = 'block';
-                toggle.textContent = 'See Less...';
-            } else {
-                content.style.display = 'none';
-                toggle.textContent = 'See More...';
-            }
+        content.classList.toggle('read-more-hidden');
+
+        if (content.classList.contains('read-more-hidden')) {
+            toggle.textContent = 'See More...';
+        } else {
+            toggle.textContent = 'See Less...';
         }
-    </script>
+    }
+</script>
 </body>
 
 </html>
